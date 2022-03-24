@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isPresented = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Show modal"){
+            self.isPresented = true
+        }
+        
     }
 }
 
